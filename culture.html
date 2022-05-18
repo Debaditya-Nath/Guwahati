@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head><title>Guwahati</title>
+<style>
+	
+	.header{width:100%;background-color:pink;padding:20px;}
+	.middle{background-image:url("https://bit.ly/3s8OUNe");height:500px;width:76%;background-size:cover;padding:200px;text-align:center;}
+	.middle-head{background-color:black;opacity:0.8;font-size:30px;border:10px solid black;color:white;}
+	.content{text-align:center;padding:50px;width:90%;}
+	ul li{list-style:none;}
+	.shadow{text-shadow:2px 2px 2px #999999;}
+	#img-id{position:relative;height:310px;width:510px;}
+	#img-id img {position:absolute;transition:opacity 0.5s ease-in-out;}
+	#img-id img.top:hover {opacity:0;}
+	.rotate{transform:rotate(8deg);}
+	nav ul {margin:0;padding:0;}
+	nav li {display:inline-block;margin-left:100px;padding-top:25px;position:relative;}
+	nav a {color:#333;text-decoration:none;text-transform:uppercase;}
+	nav a:hover {color:#000;}
+	nav a::before {content:'';display:block;height:5px;background-color:#333;position:absolute;top:0;width:0%;transition:all 250ms ease-in-out;}
+	nav a:hover::before {width:100%;}
+	
+</style>
+</head>
+
+<body style="font-family:Segoe UI;color:#593736;">
+	<header class="header">
+	<h1 align="center">Culture</h1>
+	<img src="https://bit.ly/3FdmCX9" height="90">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home Page</a></li>
+			<li><a href="hotel-info.html">Hotel Information</a></li>
+			<li><a href="#">Culture</a></li>
+			<li><a href="contact-us.html">Contact us</a></li>
+		</ul>
+	</nav>
+	</header>
+	
+	<section class="shadow">
+	<h2>Language and religion</h2>
+	<img src="https://bit.ly/38lHgbw" height="250px" class="rotate">
+	<p>The main language spoken in Guwahati is Assamese or Asomiya though Hindi and English is also spoken but very rarely found. Other most common languages are Bodo, Rabha, Karbi, Dimaca, Mishing, etc. and all of these are regional languages. People of Guwahati follows different types of religions like Buddhism, Sikhism, Jainism, Christianity, Muslims but the majority of the people of Guwahati follows Hinduism.</p>
+	</section>
+	
+	<section>
+	<h2>Culture and Dance</h2><div id="img-id">
+	<img src="culture1.jpg" height=300 width=500>
+	<img src="culture2.jpg" height=300 width=500 class="top">
+	</div></section>
+	
+	<footer class="footer" style="background-color:pink;"><label>This website is made by Debaditya &nbsp|&nbsp </label>
+	<a href="#">Contact us</a><label> &nbsp|&nbsp </label>
+	<a href="https://bit.ly/3sbyWSx">Click here to know more about Assam</a>
+	</footer>
+</body>
+</html>

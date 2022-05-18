@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head><title>Guwahati</title>
+<style>
+	
+	.header{width:100%;background-color:pink;padding:20px;}
+	.middle{background-image:url("https://bit.ly/3s8OUNe");height:500px;width:76%;background-size:cover;padding:200px;text-align:center;}
+	.middle-head{background-color:black;opacity:0.8;font-size:30px;border:10px solid black;color:white;}
+	.content{text-align:center;padding:50px;width:90%;}
+	ul li {list-style:none;}
+	nav ul {margin:0;padding:0;}
+	nav li {display:inline-block;margin-left:100px;padding-top:25px;position:relative;}
+	nav a {color:#333;text-decoration:none;text-transform:uppercase;}
+	nav a:hover {color:#000;}
+	nav a::before {content:'';display:block;height:5px;background-color:#333;position:absolute;top:0;width:0%;transition:all 250ms ease-in-out;}
+	nav a:hover::before {width:100%;}
+	
+</style>
+
+<script>
+	
+	function validate() {
+		var name1 = document.getElementById("name").value;
+		var phone1 = document.getElementById("phone").value;
+		var email1 = document.getElementById("email").value;
+		var mes1 = document.getElementById("message").value;
+		
+		if (name1.length < 5) {
+			text = "Please enter your full name";
+			error_message.innerHTML = text;
+			return false;
+		}
+		
+		if (isNaN(phone1) || phone1.length != 10) {
+			text = "Please enter valid phone number";
+			error_message.innerHTML = text;
+			return false;
+		}
+		
+		if (email1.indexOf("@") == -1 || email1.length < 6) {
+			text = "Please enter valid email";
+			error_message.innerHTML = text;
+			return false;
+		}
+		
+		if (mes1.length < 20) {
+			text = "Please enter a longer message";
+			error_message.innerHTML = text;
+			return false;
+		}
+		
+		alert("The form has been submitted succesfully");
+		return true;
+	}
+
+</script>
+
+</head>
+
+<body style="font-family:Segoe UI;color:#593736;">
+	<header class="header">
+	<h1 align="center">Guwahati</h1>
+	<img src="https://bit.ly/3FdmCX9" height="90">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home Page</a></li>
+			<li><a href="hotel-info.html">Hotel Information</a></li>
+			<li><a href="culture.html">Culture</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</nav>
+	</header>
+	
+	<section class="content"><h2>Contact Us Form</h2>
+	<form onsubmit="return validate()" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfFdaPBh-pTXxTSY4DfjXj8BtA-tWXxDTldsUwjk8McVZik3g/formResponse" name="Contact Form" align="center">
+		Your Name:<br><input type="text" id="name" name="entry.621808469"><br><br>
+		Your Phone:<br><input type="text" id="phone" name="entry.236785942"><br><br>
+		Your Email:<br><input type="text" id="email" name="entry.862102730"><br><br>
+		Your Message:<br><textarea id="message" name="entry.302285131"></textarea><br><br>
+		<input type="submit">
+	</form>
+	<div id="error_message"></div>
+	</section>
+	
+	<footer class="footer" style="background-color:pink;"><label>This website is made by Debaditya &nbsp|&nbsp </label>
+	<a href="#">Contact us</a><label> &nbsp|&nbsp </label>
+	<a href="https://bit.ly/3sbyWSx">Click here to know more about Assam</a></footer>
+</body>
+</html>
